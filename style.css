@@ -103,3 +103,8 @@ main {
   font-size: 1em;
   background-color: #cd1818;
 }
+
+footer { 
+  padding: 15px 0 30px;
+  text-align: center; 
+}
