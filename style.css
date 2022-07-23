@@ -1,0 +1,105 @@
+/* variabel root */
+:root {
+  --light: #f2f4e8;
+  --dark: #464239;
+  --cream: #ffe6bc;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--dark);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+}
+
+hr {
+  width: 80%;
+  margin: 20px auto 0;
+  border-bottom: none;
+  border-color: var(--dark);
+}
+
+input { background-color: var(--light); }
+
+h1, h2 { 
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.header { padding-top: 20px; }
+
+main {
+  display: flex;
+  padding-bottom: 40px;
+  flex-direction: column;
+}
+
+.section-box {
+  max-width: 650px;
+  margin: 40px auto 0;
+  padding: 20px 20px 24px;
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+}
+
+.section-box > form { margin-top: 28px; }
+
+.input-box { margin-bottom: 20px; }
+
+.input-box > input { 
+  display: block; 
+  width: 100%;
+  padding: 3px 5px;
+  font-size: 1em;
+  border: 1px solid rgba(70, 66, 57, 0.5);
+  border-radius: 8px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: var(--dark);
+  color: var(--light);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover { opacity: 90%; }
+
+.btn-submit { width: 100%; }
+
+.book-list > div {
+  max-width: 750px;
+  margin: 40px auto 0;
+  padding: 20px 20px 24px;
+  border: 1px solid var(--dark);
+  border-radius: 8px;
+}
+
+.book-list .completed-list, .book-list .uncomplete-list { margin-top: 26px; }
+
+.book-list article {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid rgba(70, 66, 57, 0.5);
+  border-radius: 8px;
+}
+
+.btn-done, .btn-undo { 
+  margin-right: 10px;
+  font-size: 1em; 
+}
+
+.btn-delete {
+  font-size: 1em;
+  background-color: #cd1818;
+}

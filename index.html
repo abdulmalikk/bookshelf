@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf apps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Bookshelf Apps</h1>
+  </header>
+  
+  <hr>
+
+  <main>
+    <section class="section-box">
+      <h2>Add new book</h2>
+      <form id="inputForm">
+        <div class="input-box">
+          <label for="inputTitle">Title</label>
+          <input type="text" id="inputTitle" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+          <label for="inputAuthor">Author</label>
+          <input type="text" id="inputAuthor" autocomplete="off" required>
+        </div>
+        <div class="input-box">
+          <label for="inputYear">Release year</label>
+          <input type="number" id="inputYear" autocomplete="off" required min="1900" max="2022">
+        </div>
+        <button type="submit" class="btn btn-submit">Add book!</button>
+      </form>
+    </section>
+    <section class="book-list">
+      <div>
+        <h2>Still reading</h2>
+        <div class="uncomplete-list">
+          <!-- <article>
+            <h3>Bedebah di ujung tanduk</h3>
+            <p>Rilis pada tahun 2021</p>
+            <p>Ditulis oleh Tere liye</p>
+            <button class="btn btn-move">Selesai dibaca</button>
+            <button class="btn btn-delete">Hapus buku</button>
+          </article> -->
+        </div>
+      </div>
+      <div>
+        <h2>Finished</h2>
+        <div class="completed-list">
+          <!-- <article>
+            <h3>Rasa</h3>
+            <p>Rilis pada tahun 2022</p>
+            <p>Ditulis oleh Tere liye</p>
+            <button class="btn btn-move">Belum dibaca</button>
+            <button class="btn btn-delete">Hapus buku</button>
+          </article> -->
+          <!-- <p>Belum ada</p> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
